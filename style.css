@@ -1,0 +1,40 @@
+body {
+  background-color: rgba(9, 9, 165, 0.78);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 50%;
+  height: 70%;
+  border-radius: 5%;
+
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.search-engine {
+  text-align: center;
+}
+
+.memo {
+  display: flex;
+  position: relative;
+}
+
+.memo-text {
+  margin-left: 5%;
+}
+
+.close {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  font-size: 20px;
+  cursor: pointer;
+}

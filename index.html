@@ -4,10 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>To-DO List</title>
+  <title>To-Do List</title>
 </head>
 <body>
-  
+  <div class="container">
+    
+    <div class="title">
+      <h1>To-Do List 📋</h1>
+    </div>
+
+    <div class="search-engine">
+      <input type="text" id="searchInput">
+      <button type="button" id="searchBtn">Add</button>
+    </div>
+
+    <ul class="memo-area">
+
+      <li class="memo">
+        <input type="checkbox">
+        <p class="memo-text">sample memo</p>
+        <span class="close">&times;</span>
+      </li>
+
+    </ul>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
