@@ -17,11 +17,11 @@ function registerButtonListeners(){
     button.addEventListener('change', function(){
       if (this.checked) {
         console.log("Checkbox is checked..");
-        addStrikethrough();
+        addStrikethrough(event);
         
       } else {
         console.log("Checkbox is not checked..");
-        clearStrikethrough();
+        clearStrikethrough(event);
         
       }
     });
@@ -89,15 +89,19 @@ function createTodoItem(){
   }
 }
 
-function addStrikethrough(){
-
-  // let textElement = document.querySelector('#liID');
-  // textElement.style.textDecoration = 'line-through';
+function addStrikethrough(event){
+  let liID = event.target.parentNode.id;
+  console.log(liID);
+  let textElement = event.target.parentNode.querySelector('.memo-text');
+  textElement.style.textDecoration = 'line-through';
 }
 //체크박스 설정 -> 취소선을 긋는 함수
 
-function clearStrikethrough(){
-
+function clearStrikethrough(event){
+  let liID = event.target.parentNode.id;
+  console.log(liID);
+  let textElement = event.target.parentNode.querySelector('.memo-text');
+  textElement.style.textDecoration = '';
 }
 //체크박스 해제 -> 취소선을 제거하는 함수
 
