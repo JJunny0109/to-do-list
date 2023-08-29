@@ -8,9 +8,9 @@ body {
 .container {
   background-color: white;
   width: 50%;
-  /* height: auto; */
+  height: auto;
   border-radius: 5vh;
-  margin-top: 100px;
+  margin-top: 10%;
   padding-bottom: 5%;
 }
 
@@ -44,12 +44,3 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
-
-dialog {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  border: 0;
-  text-align: center;
-  border-radius: 20px;
-  padding: 20px 50px 10px 50px;
-}
-/* 모달에 관한 Style */

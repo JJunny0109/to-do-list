@@ -8,6 +8,8 @@ addBtn.addEventListener("click", createTodoItem);
 let memoCheckboxes = document.querySelectorAll('.memo-checkbox');
 let memoTexts = document.querySelectorAll('.memo-checkbox');
 let deleteBtns = document.querySelectorAll('.closeCross');
+
+const editItemBtn = document.querySelector('#editItemBtn');
 //memo-area의 Elements를 할당
 
 function registerButtonListeners(){
@@ -43,6 +45,8 @@ function registerButtonListeners(){
 
 registerButtonListeners();
 let ID_Num = 1;
+
+/* init */
 
 
 function createTodoItem(){

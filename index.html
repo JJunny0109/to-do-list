@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal-style.css">
   <title>To-Do List</title>
 </head>
 <body>
@@ -30,9 +31,13 @@
   </div>
 
   <dialog>
-    Hello Wolrd!
+    Hello World!
     <form method="dialog">
-      <button class="btn">Close</button>
+      <div class="modal-btns">
+        <button class="btn" id="editItemBtn">Edit</button>
+        <button class="btn" id="deleteItemBtn">Delete</button>
+        <button class="btn">Close</button>
+      </div>
     </form>
   </dialog>
   <!-- dialog태그는 모달을 의미한다 -->
